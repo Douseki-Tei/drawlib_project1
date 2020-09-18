@@ -1,0 +1,23 @@
+#include <drawlib.h>
+
+int main(void) 
+{
+  dl_initialize(1.0);
+
+  dl_line(0,300,1000,300,dl_color_from_name("black"),3);
+  dl_line(350,400,500,400,dl_color_from_name("blue"),2);
+  dl_line(350,400,350,450,dl_color_from_name("blue"),2);
+  dl_line(350,450,400,450,dl_color_from_name("blue"),2);
+  dl_line(400,450,400,500,dl_color_from_name("blue"),2);
+  dl_line(400,450,450,450,dl_color_from_name("blue"),2);
+  dl_line(450,450,450,400,dl_color_from_name("blue"),2);
+  dl_line(450,400,500,400,dl_color_from_name("blue"),2);
+  dl_line(500,400,500,350,dl_color_from_name("blue"),2);
+  
+
+  while(1)
+  {
+    dl_wait(0.01);
+   }
+    return 0;
+}
